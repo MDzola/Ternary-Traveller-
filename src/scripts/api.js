@@ -16,5 +16,24 @@ function getInterest() {
 }
 
 
+function deleteInterest(id) {
+    return fetch(`http://localhost:8088/interests/${id}`,{
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+}
 
-export {addNewInterest, getInterest}
+
+function updatedInterest(interest) {
+    return fetch(`http://localhost:8088/interests/${interest.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(interest)
+    })
+}
+
+export {addNewInterest, getInterest, deleteInterest, updatedInterest}
