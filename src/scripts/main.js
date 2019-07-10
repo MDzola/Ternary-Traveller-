@@ -74,7 +74,7 @@ function createListInterests(interest) {
 
     li1.innerHTML = `Name of Place: ${interest.name}`
     li2.innerHTML = `Description: ${interest.description}`
-    li3.innerHTML = `Cost: ${interest.cost}`
+    li3.innerHTML = `Cost: $${interest.cost}`
     li4.innerHTML =  `Review: ${interest.review}`
 
     deleteBtn.addEventListener("click", () => {

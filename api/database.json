@@ -43,14 +43,6 @@
     },
     {
       "placeId": 1,
-      "name": "Shopping",
-      "description": "hhh",
-      "cost": 5555,
-      "review": "hkkhh",
-      "id": 9
-    },
-    {
-      "placeId": 1,
       "name": "AAAA",
       "description": "ZAAA",
       "cost": 12,
@@ -80,6 +72,14 @@
       "cost": 98989898,
       "review": "YEAHHHH",
       "id": 14
+    },
+    {
+      "placeId": 1,
+      "name": "WINe",
+      "description": "nice place to drink",
+      "cost": 500,
+      "review": "it was great",
+      "id": 15
     }
   ]
 }
