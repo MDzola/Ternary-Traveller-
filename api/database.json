@@ -18,14 +18,6 @@
   ],
   "interests": [
     {
-      "id": 1,
-      "placeId": 1,
-      "name": "Local Market",
-      "description": "Local market where you can purchase local products and try the local food",
-      "cost": 0,
-      "review": ""
-    },
-    {
       "placeId": 3,
       "name": "market stuff",
       "description": "it has food",
@@ -40,6 +32,54 @@
       "cost": 2222,
       "review": "pretty good food",
       "id": 3
+    },
+    {
+      "placeId": 2,
+      "name": "AAAA",
+      "description": "AAAA",
+      "cost": 33333,
+      "review": "AAAAA",
+      "id": 4
+    },
+    {
+      "placeId": 1,
+      "name": "Shopping",
+      "description": "hhh",
+      "cost": 5555,
+      "review": "hkkhh",
+      "id": 9
+    },
+    {
+      "placeId": 1,
+      "name": "AAAA",
+      "description": "ZAAA",
+      "cost": 12,
+      "review": "done",
+      "id": 10
+    },
+    {
+      "placeId": 1,
+      "name": "CCCC",
+      "description": "CCCC",
+      "cost": 99999,
+      "review": "CCCC",
+      "id": 12
+    },
+    {
+      "placeId": 2,
+      "name": "ZZZZZ",
+      "description": "ZZZZZ",
+      "cost": 99999,
+      "review": "ZZZZ",
+      "id": 13
+    },
+    {
+      "placeId": 3,
+      "name": "Gold",
+      "description": "WINE COUNTRY",
+      "cost": 98989898,
+      "review": "YEAHHHH",
+      "id": 14
     }
   ]
 }
