@@ -1,4 +1,5 @@
-import {addNewInterest, getInterest} from "./api.js"
+import {addNewInterest} from "./api.js"
+import {buildInterestObject} from "./helpers.js"
 
 let newInterestSection = document.getElementById("newInterest")
 
@@ -27,8 +28,6 @@ function createNewInterest() {
 
     return elem
 }
-
-
 
 
 function createNewInterests() {
@@ -61,15 +60,5 @@ function addNewInterestToDOM(createContainer, createForm) {
     })
 }
 
-
-function buildInterestObject(placeIdVal, nameVal, descriptionVal, costVal, reviewVal) {
-    return {
-      placeId: parseInt(placeIdVal),
-      name: nameVal,
-      description: descriptionVal,
-      cost: parseInt(costVal),
-      review:  reviewVal,
-    }
-}
 
 export {createInterests}

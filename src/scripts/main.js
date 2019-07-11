@@ -1,53 +1,34 @@
 import {getInterest, deleteInterest, updatedInterest} from "./api.js"
 import { createInterests } from "./createNewInterest.js";
+import {buildInterestObject} from "./helpers.js"
 
 let italySection = document.getElementById("italy")
 let switzSection = document.getElementById("switz")
 let franceSection = document.getElementById("france")
 
 createInterests()
+listInterests()
 
 
 
-
-    listInterestsITALY()
-    listInterestsSWITZ()
-    listInterestsFRANCE()
-
-
-
-function listInterestsITALY() {
+function listInterests() {
     getInterest()
     .then( interestData => {
         interestData.forEach( interest => {
             if (interest.placeId === 1) {
                 italySection.appendChild(createListInterests(interest))
             }
-        })
-    })
-}
-
-function listInterestsSWITZ() {
-    getInterest()
-    .then( interestData => {
-        interestData.forEach( interest => {
             if (interest.placeId === 2) {
                 switzSection.appendChild(createListInterests(interest))
             }
-        })
-    })
-}
-
-function listInterestsFRANCE() {
-    getInterest()
-    .then( interestData => {
-        interestData.forEach( interest => {
             if (interest.placeId === 3) {
                 franceSection.appendChild(createListInterests(interest))
             }
         })
     })
 }
+
+
 
 function createListInterests(interest) {
     let elem = document.createElement("div")
@@ -101,7 +82,6 @@ function createListInterests(interest) {
 }
 
 
-
     function createEditForm(interest) {
         return `
         <input id="interest-id" type="hidden" value=${interest.id}>
@@ -133,12 +113,3 @@ function createListInterests(interest) {
     }
 
 
-function buildInterestObject(placeIdVal, nameVal, descriptionVal, costVal, reviewVal) {
-    return {
-      placeId: parseInt(placeIdVal),
-      name: nameVal,
-      description: descriptionVal,
-      cost: parseInt(costVal),
-      review:  reviewVal,
-    }
-}
