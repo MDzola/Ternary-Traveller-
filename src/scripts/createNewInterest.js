@@ -9,17 +9,20 @@ function createInterests() {
 }
 
 function createNewInterest() {
-   let elem = document.createElement("div")
+   let btn = document.getElementById("diffBtn")
+    let elem = document.createElement("div")
    let div = document.createElement("div")
-   let createBtn = document.createElement("button")
-   elem.appendChild(createBtn)
+//    let createBtn = document.createElement("button")
+//    elem.appendChild(createBtn)
    elem.appendChild(div)
 
     div.setAttribute("id", "newInt")
 
-   createBtn.textContent = "Create a New Interest"
 
-   createBtn.addEventListener("click", () => {
+
+//    createBtn.textContent = "Create a New Interest"
+
+   btn.addEventListener("click", () => {
        let createForm = createNewInterests()
        addNewInterestToDOM(div.id, createForm)
 
@@ -32,6 +35,8 @@ function createNewInterest() {
 
 function createNewInterests() {
     return `
+    <form action="#" class="simple-form">
+    <div class="create-form">
     <select type="text" id="country">
         <option value="1">Italy</option>
         <option value="2">Switzerland</option>
@@ -40,7 +45,9 @@ function createNewInterests() {
     <div><input id="description" name="description_of_place" type="text" placeholder="description of interest"></div>
     <div><input id="cost" name="cost_of_place" type="text" placeholder="cost of interest"></div>
     <div><input id="review" name="review_of_place" type="text" placeholder= "review of interest"></div>
-    <div><button id="saveInterest-btn">Save Interest</button></div>
+    <div><button id="saveInterest-btn" class="button">Save Interest</button></div>
+    </div>
+    </form>
     `
 }
 

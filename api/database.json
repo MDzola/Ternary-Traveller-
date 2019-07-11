@@ -88,6 +88,22 @@
       "cost": 555555555555555540000,
       "review": "4",
       "id": 19
+    },
+    {
+      "placeId": 1,
+      "name": "",
+      "description": "",
+      "cost": null,
+      "review": "",
+      "id": 20
+    },
+    {
+      "placeId": 1,
+      "name": "asssa",
+      "description": "asdasdasd",
+      "cost": 3434343,
+      "review": "dfdfdfd",
+      "id": 21
     }
   ]
 }
